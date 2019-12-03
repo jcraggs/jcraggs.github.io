@@ -19,13 +19,20 @@
       embedded
       arjs="sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;"
     >
-      <a-entity
+      <!-- <a-entity
         gps-entity-place="latitude: 53.4858; longitude:-2.2395;"
         gltf-model="./assets/magnemite/scene.gltf"
         rotation="0 180 -1"
         animation-mixer
         scale="0.01 0.01 0.01"
-      />
+      /> -->
+      <a-image
+        gps-entity-place="latitude: 53.4858; longitude:-2.2395;"
+        name="test"
+        scale="20,20"
+        alpha-test="0.5"
+        src="./images/forum-concept.png"
+      ></a-image>
       <a-camera gps-camera rotation-reader></a-camera>
     </a-scene>
   </body>
